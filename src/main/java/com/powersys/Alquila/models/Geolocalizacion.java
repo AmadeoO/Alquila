@@ -1,13 +1,13 @@
 package com.powersys.Alquila.models;
 
 
-public class Altura {
+public class Geolocalizacion {
 	private int latitud;
 	private int longitud;
-	
-	
-	public Altura(int latitud, int longitud) {
-		
+
+
+	public Geolocalizacion(int latitud, int longitud) {
+
 		this.latitud = latitud;
 		this.longitud = longitud;
 	}
