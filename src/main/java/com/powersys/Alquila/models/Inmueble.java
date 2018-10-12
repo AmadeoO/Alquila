@@ -11,8 +11,8 @@ import javax.persistence.Table;
 /**
  * 
  * @author Amadeo F. García
- *nameGit{AmadeoO}
- *emailGit{amadeo.fgarcia@gmail.com}
+ * nameGit{AmadeoO}
+ * emailGit{amadeo.fgarcia@gmail.com}
  */
 
 @Entity(name="Inmueble")
@@ -40,12 +40,12 @@ public class Inmueble implements Serializable{
 	@Column(name="detalles_inmueble")
 	private String detallesInmueble;//Esta clase la va hacer nico
 	
-	@Column(name="precio")
-	private float precio;
-	
 	@Column(name="otros_detalles")
 	private String otrosDetalles;
 	
+	@Column(name="precio")
+	private float precio;
+		
 	@Column(name="tipo_inmueble")
 	private String tipoInmueble; //Ej: Casa, Departamento, Oficina, etc.
 	
