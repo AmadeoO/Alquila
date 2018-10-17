@@ -8,10 +8,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
 /**
  * 
- * @author Amadeo F. García
- * nameGit{AmadeoO}
+ * @author Amadeo F. Garcia
+ * userGit{AmadeoO}
  * emailGit{amadeo.fgarcia@gmail.com}
  */
 
@@ -56,6 +57,9 @@ public class Inmueble implements Serializable{
 		this.detallesInmueble = detallesInmueble;
 		this.precio = precio;
 		this.otrosDetalles = otrosDetalles;
+	}
+	public Inmueble() {
+		
 	}
 
 	public String getDireccion() {
@@ -105,10 +109,6 @@ public class Inmueble implements Serializable{
 	public void setTipoInmueble(String tipoInmueble) {
 		this.tipoInmueble = tipoInmueble;
 	}
-	
-	
-	
-	
 	
 
 }
