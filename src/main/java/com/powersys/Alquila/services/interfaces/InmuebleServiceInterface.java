@@ -15,7 +15,8 @@ import com.powersys.Alquila.models.Inmueble;
 public interface InmuebleServiceInterface {
 	
 	public Inmueble  findOne(String id_inmueble);
-	public List <Inmueble> fidAll();
+	public List <Inmueble> findAll();
 	public List<Inmueble> findTipoInmueble (String tipo_inmueble);
+	public boolean insertInmueble(Inmueble inmueble);
 
 }

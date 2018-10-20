@@ -38,9 +38,16 @@ public class InmuebleService implements InmuebleServiceInterface{
 
 
 	@Override
-	public List<Inmueble> fidAll() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Inmueble> findAll() {
+		return (List<Inmueble>) this.inmuebleRepository.findAll();
+	}
+
+
+
+	@Override
+	public boolean insertInmueble(Inmueble inmueble) {
+		this.inmuebleRepository.save(inmueble);
+		return true;
 	}
 
 }

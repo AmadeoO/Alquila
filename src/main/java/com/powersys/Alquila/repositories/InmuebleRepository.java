@@ -18,7 +18,6 @@ import com.powersys.Alquila.models.Inmueble;
 
 @Repository
 public interface InmuebleRepository extends CrudRepository<Inmueble, String> {
-	public List<Inmueble> findByTipoInmueble(String tipo_inmueble);
-	
+	public List<Inmueble> findByTipoInmueble(String tipo_inmueble);	
 	
 }
