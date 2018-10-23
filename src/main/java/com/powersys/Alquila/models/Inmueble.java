@@ -51,10 +51,8 @@ public class Inmueble implements Serializable{
 	private String tipoInmueble; //Ej: Casa, Departamento, Oficina, etc.
 	
 	
-	public Inmueble(String idInmueble, String direccion, String detallesLegales, String detallesInmueble,
+	public Inmueble( String direccion, String detallesLegales, String detallesInmueble,
 			String otrosDetalles, float precio, String tipoInmueble) {
-		super();
-		this.idInmueble = idInmueble;
 		this.direccion = direccion;
 		this.detallesLegales = detallesLegales;
 		this.detallesInmueble = detallesInmueble;
@@ -62,8 +60,7 @@ public class Inmueble implements Serializable{
 		this.precio = precio;
 		this.tipoInmueble = tipoInmueble;
 	}
-
-
+	
 
 	public Inmueble() {
 		
