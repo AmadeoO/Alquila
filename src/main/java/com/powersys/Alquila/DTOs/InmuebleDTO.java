@@ -1,5 +1,7 @@
 package com.powersys.Alquila.DTOs;
 
+import java.util.UUID;
+
 /**
  * @author Amadeo F. Garcia
  * userGit{AmadeoO}
@@ -7,7 +9,7 @@ package com.powersys.Alquila.DTOs;
  */
 public class InmuebleDTO {
 	
-	private String idInmueble;
+	
 	private String direccion;
 	private String detallesLegales;
 	private String detallesInmueble;
@@ -15,10 +17,10 @@ public class InmuebleDTO {
 	private float precio;
 	private String tipoInmueble;
 	
-	public InmuebleDTO(String idInmueble, String direccion, String detallesLegales, String detallesInmueble,
+	public InmuebleDTO(String direccion, String detallesLegales, String detallesInmueble,
 			String otrosDetalles, float precio, String tipoInmueble) {
 		super();
-		this.idInmueble = idInmueble;
+		
 		this.direccion = direccion;
 		this.detallesLegales = detallesLegales;
 		this.detallesInmueble = detallesInmueble;
@@ -30,12 +32,7 @@ public class InmuebleDTO {
 		
 	}
 	
-	public String getIdInmueble() {
-		return idInmueble;
-	}
-	public void setIdInmueble(String idInmueble) {
-		this.idInmueble = idInmueble;
-	}
+	
 	public String getDireccion() {
 		return direccion;
 	}
