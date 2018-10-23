@@ -1,27 +1,29 @@
 package com.powersys.Alquila.webControllers;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
-
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.powersys.Alquila.DTOs.InmuebleDTO;
-import com.powersys.Alquila.models.Inmueble;
+//import com.powersys.Alquila.models.Inmueble;
 import com.powersys.Alquila.services.implementations.InmuebleService;
 
+@Controller
 public class CargaInmuebleWebVC {
 	
 	private InmuebleService inmuebleService;
 	
 	 @RequestMapping(value="/cargarInmueble", method=RequestMethod.GET)
 	    public String cargarInmuebleForm(Model model){
-	        model.addAttribute("inmueble", new Inmueble());
+	        model.addAttribute("inmueble", new InmuebleDTO());
 	        return "cargarInmueble";
-	    }/*
+	    }
+	 
+	 
+	 /*
+	 
+	 
 	 @RequestMapping(value="cargarInmueble", method=RquestMethod.POST)
 	 public String InmuebleFormSubmit(Model model) {
 		 
