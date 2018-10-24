@@ -3,10 +3,11 @@
  */
 package com.powersys.Alquila.restControllers;
 
-import java.util.UUID;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -30,7 +31,7 @@ public class InmuebleRestController {
 	private InmuebleService inmuebleService;
 	
 		
-	@PostMapping("/cargarInmueble")
+	@PostMapping("/api/cargarInmueble")
 	public InmuebleDTO altaInmueble(@ModelAttribute InmuebleDTO inmuebleDTO, Model model) {
 		Inmueble inmueble = new Inmueble(
 				inmuebleDTO.getDireccion(),
@@ -43,6 +44,11 @@ public class InmuebleRestController {
 		this.inmuebleService.insertInmueble(inmueble);
 		
 		return inmuebleDTO;
+	}
+	
+	@GetMapping("/api/mostrarInmuebles")
+	public List<Inmueble> getInmuebles(){
+		return this.inmuebleService.findAll();
 	}
 
 }
