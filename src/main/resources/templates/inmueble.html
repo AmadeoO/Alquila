@@ -1,0 +1,13 @@
+<html>
+<head>
+
+<title>Inmueble</title>
+</head>
+<body>
+  <h2 >
+    <tr th:each="i: ${inmueble}">
+      <td th:text="${i.direccion}"></td><br/>
+    </tr>
+  </h2>
+</body>
+</html>

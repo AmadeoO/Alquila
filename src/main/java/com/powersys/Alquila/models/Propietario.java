@@ -4,22 +4,40 @@ package com.powersys.Alquila.models;
 public class Propietario {
 	private String nombre;
 	private String apellido;
-	private String dNI;
+	private String dni;
 	private String telefono;
 	private Direccion direccion;
+	private String email;
 	private SocialMedia socialMedia;
-	private String cUIL;
-	
-	public Propietario(String nombre, String apellido, String dNI, String telefono, Direccion direccion,
-			SocialMedia socialMedia, String cUIL) {
+	private String cuil;
+	private String fotoPerfil;//ruta del archivo de la imagen
+
+	public Propietario(String nombre, String apellido, String dni, String telefono, Direccion direccion, String email,
+			SocialMedia socialMedia, String cuil, String fotoPerfil) {
 		this.nombre = nombre;
 		this.apellido = apellido;
-		this.dNI = dNI;
+		this.dni = dni;
 		this.telefono = telefono;
 		this.direccion = direccion;
+		this.email = email;
 		this.socialMedia = socialMedia;
-		this.cUIL = cUIL;
+		this.cuil = cuil;
+		this.fotoPerfil = fotoPerfil;
 	}
+
+
+
+	public String getFotoPerfil() {
+		return fotoPerfil;
+	}
+
+
+
+	public void setFotoPerfil(String fotoPerfil) {
+		this.fotoPerfil = fotoPerfil;
+	}
+
+
 
 	public String getNombre() {
 		return nombre;
@@ -37,12 +55,12 @@ public class Propietario {
 		this.apellido = apellido;
 	}
 
-	public String getdNI() {
-		return dNI;
+	public String getDni() {
+		return dni;
 	}
 
-	public void setdNI(String dNI) {
-		this.dNI = dNI;
+	public void setDni(String dni) {
+		this.dni = dni;
 	}
 
 	public String getTelefono() {
@@ -69,13 +87,21 @@ public class Propietario {
 		this.socialMedia = socialMedia;
 	}
 
-	public String getcUIL() {
-		return cUIL;
+	public String getCuil() {
+		return cuil;
 	}
 
-	public void setcUIL(String cUIL) {
-		this.cUIL = cUIL;
+	public void setCuil(String cuil) {
+		this.cuil = cuil;
 	}
-	
-	
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
 }

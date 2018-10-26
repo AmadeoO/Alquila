@@ -7,15 +7,17 @@ public class Direccion {
 	private String calle;
 	private String barrio;
 	private String parcela;
-	private Altura altura;
+	private String altura;
+	private Geolocalizacion geolocalizacion;
 	
-	public Direccion(String piso, String calle, String barrio, String parcela, Altura altura) {
-		
+	public Direccion(String piso, String calle, String barrio, String parcela, String altura,
+			Geolocalizacion geolocalizacion) {
 		this.piso = piso;
 		this.calle = calle;
 		this.barrio = barrio;
 		this.parcela = parcela;
 		this.altura = altura;
+		this.geolocalizacion = geolocalizacion;
 	}
 
 	public String getPiso() {
@@ -50,13 +52,23 @@ public class Direccion {
 		this.parcela = parcela;
 	}
 
-	public Altura getAltura() {
+	public String getAltura() {
 		return altura;
 	}
 
-	public void setAltura(Altura altura) {
+	public void setAltura(String altura) {
 		this.altura = altura;
 	}
-	
+
+	public Geolocalizacion getGeolocalizacion() {
+		return geolocalizacion;
+	}
+
+	public void setGeolocalizacion(Geolocalizacion geolocalizacion) {
+		this.geolocalizacion = geolocalizacion;
+	}
+
 	
 }
+	
+	
