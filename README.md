@@ -1,5 +1,8 @@
 # Alquila
-Proyecto para el informatorio 2018, en el cual desarrollamos una aplicación enfocada a los alquiler inmobiliarios
+Proyecto desarrollado en el año 2018, el cual consiste una aplicación enfocada a los alquiler inmobiliarios.
+
+# Empresa:
+PowerSys
 
 Para ocupar el repositorio se debe seguir los siguientes pasos:
 1) Realizar un Fork del repositorio "Alquila".
